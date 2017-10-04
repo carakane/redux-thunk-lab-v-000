@@ -2,7 +2,7 @@ import React from 'react';
 // import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
 import App from './App'
-// import {ConnectedApp} from './App'
+import {WrapperApp} from './App'
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
@@ -13,8 +13,8 @@ const store = createStore(rootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
   <Provider store={store}>
-  // <ConnectedApp store={store} name='Connect(App)'/>
-    <App store={store} />
+  <WrapperApp store={store} name='Connect(App)'/>
+    // <App store={store} />
   </Provider>,
     document.getElementById('root')
 );
