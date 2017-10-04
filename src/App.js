@@ -47,6 +47,8 @@ const mapDispatchToProps = (dispatch) => {
   }, dispatch);
 };
 
+// export default connect(mapStateToProps, mapDispatchToProps)(App);
+
 export const WrapperApp = connect(mapStateToProps, mapDispatchToProps)(App);
 
 App.displayName = 'Connect(App)'
