@@ -11,7 +11,7 @@ const store = createStore(rootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
   <Provider store={store}>
-  <WrapperApp store={store} name='Connect(App)'/>
+    <WrapperApp store={store} name='Connect(App)'/>
     // <App store={store} />
   </Provider>,
     document.getElementById('root')
